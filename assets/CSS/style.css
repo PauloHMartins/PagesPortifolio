@@ -1,0 +1,315 @@
+*{
+    font-family: 'Staatliches', cursive;
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(38, 38, 48);
+}
+/* Header*/
+.topo{
+    width: 100vw;
+    height: 50px;
+    background-color:#353535;
+    position: fixed;
+}
+.subtopo{
+    width: 1200px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: auto;
+    color: white;
+}
+.logomarca{
+    font-size: 24px;
+    line-height: 50px;
+    flex: 1.5;
+}
+.logomarca span{
+    font-family: 'Seymour One', sans-serif;
+    cursor: pointer;
+}
+.menu{
+    flex:3;
+    
+}
+.menuinterno{
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    cursor: pointer;
+}
+.menu li {
+    float: right;
+    margin: auto;
+    line-height: 50px;
+ 
+}
+.menu li a {
+    text-decoration: none;
+    color: #FFF;
+}
+.menu li a:hover{
+    display: block;
+    background-color: white;
+    color:#353535;
+}
+/*BANNER*/
+.banner{
+    height: 70vh;
+    background-color:#FFF;
+}
+.bannerinterno{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    color: white;
+}
+.esquerda{
+    margin-top: 40px;
+    flex:1;
+
+}
+.esquerda .profile--picture img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+.profile--informations li,
+.profile--informations ul {
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+.profile--informations li {
+   font-family: 'Do Hyeon', sans-serif;
+    color: #4C6EF5;
+    font-weight: 700;
+}
+.direita{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+}
+.direita img{
+    height: 400px;
+    border-radius: 30px;
+    margin-top: 100px;
+
+}
+.social .social--img a {
+    margin-top: 20px;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+.social--img img{
+    border-radius: 40px;
+    
+}
+.social--img .white{
+    background-color:#FFF;
+    border: 0;
+}
+.projects img{
+    width:100vw;
+
+}
+
+/*MAIN*/
+.conteudo{
+    height: auto;
+    margin: auto;
+    
+    
+}
+.conteudo h1,
+.skils h1,
+.about h1 {
+    color:white;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'Seymour One', sans-serif;
+    letter-spacing: 3px;
+
+}
+.conteudointerno{
+ width: 1000px;
+ display: flex;
+ margin: auto;
+ padding: 0;
+ justify-content: center;
+ 
+}
+
+.skils img {
+    display:block;
+    margin:auto;
+    width: 100px;
+    height: 100px;
+    line-height: 80px;
+    border-radius: 15px;
+
+} 
+.ative{
+    margin-bottom: 15px;
+}
+.skils li{
+    display:block;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Staatliches', cursive;
+    color: #FFF;
+    letter-spacing: 1px;
+    
+}
+.conteudointerno .projects img{
+    width: 80vw;
+    margin: auto;
+    margin: 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+.projects,
+.skils{
+    border-top: 1px solid #bbb;
+}
+.conteudointerno .projects h3{
+    width: 80vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    border-top: 1px solid #bbb;
+    color: #fff;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+/*ABOUT*/
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    margin-bottom: 40px;
+    
+}
+.about h1{
+    width: 80vw;
+    display:inline-block;
+    border-top:1px solid gray;
+    padding-top: 15px;
+}
+.about li,
+.about h3{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about h3{
+    width: 80vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.about ul,
+.about li{
+    list-style: none;
+    text-align: center;
+}
+
+/*FOOTER*/
+.rodape{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+.rodapeinterno{
+    width: 1000px;
+    color: #353535;
+    margin: auto;
+    font-size: 20px;
+
+}
+
+/*RESPONSIVIDADE */
+@media (min-width:400px) and (max-width:1200px) {
+    .logomarca{
+        display: none;
+    }
+    .subtopo{
+        width: auto;
+    }
+    .menuinterno li {
+        display: inline-block;
+        justify-content: flex-start;
+        font-size: 14px;
+        width: 100px;
+        height: 50px;
+    }
+
+    .direita{
+        display: none;
+    }
+    .bannerinterno{
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+    }
+    .profile--informations{
+        margin: 15px;
+    }
+    .profile--picture{
+        margin: 15px;
+    }
+    .social{
+        margin: 15px;
+    }
+    .projects{
+        width: 80vw;
+        height: auto;
+        margin: 15px;
+    }
+    .skils{
+        width: 80vw;
+        height: auto;
+        margin: 15px;
+    }
+    .conteudointerno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        height: auto;
+    }
+    .tools{
+        display: none;
+    }
+
+
+}
