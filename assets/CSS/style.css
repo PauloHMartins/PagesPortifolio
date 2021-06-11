@@ -258,7 +258,7 @@ body{
 }
 
 /*RESPONSIVIDADE */
-@media (min-width:400px) and (max-width:1200px) {
+@media (min-width:320px) and (max-width:1200px) {
     .logomarca{
         display: none;
     }
