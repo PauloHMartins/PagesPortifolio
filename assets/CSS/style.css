@@ -262,6 +262,9 @@ body{
     .logomarca{
         display: none;
     }
+    .topo{
+        width: 100vw;
+    }
     .subtopo{
         width: auto;
     }
@@ -269,29 +272,38 @@ body{
         display: inline-block;
         justify-content: flex-start;
         font-size: 14px;
-        width: 100px;
+        width: 80px;
         height: 50px;
     }
 
     .direita{
         display: none;
     }
+    .banner{
+        height: 100vh;
+    }
     .bannerinterno{
-        width: 70vw;
-        height: auto;
+        width: 100vw;
+        height: 100vh;
         margin: auto;
     }
-    .esquerda{
-        margin-top: -70px;
-    }
+   
     .esquerda .profile--picture{
         margin-top: 30px;
         margin-left: 15px;
         margin-right: 15px;
         display: inline-block;
+        
+    }
+    .esquerda .profile--picture img{
+
     }
     .profile--informations{
-        margin: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        margin-top: 0;
+
     }
    
     .social{
