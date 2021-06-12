@@ -402,8 +402,11 @@ margin: auto;
     }
     .rodapeinterno{
         font-size: 16px;
-        height: 2vh;
+        height:auto;
         text-align: center;
+    }
+    .rodape{
+        height: auto;
     }
 
 
