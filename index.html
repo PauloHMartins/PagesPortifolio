@@ -10,7 +10,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">    
         <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">       
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">    
+        <!--Responsividade-->
+        <link rel="stylesheet" href="assets/CSS/owl/responsive.css">
+        <!--Owl CSS-->
+         <link rel="stylesheet" href="assets/CSS/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/CSS/owl/owl.theme.default.min.css">   
     </head>
     <body>
         <header>
@@ -42,12 +47,12 @@
                             
                             </div>
                             <div class="profile--informations">
-                                <ul>
-                                    <li>Paulo Henrique Miranda Martins</li>
-                                    <li> Developer web Student </li>
-                                    <li>Unicesumar Analysis and Systems Development</li>
-                                    <li>Uberlândia, Minas Gerais, Brasil</li>
-                                </ul>
+                                <div class="informations">
+                                    <div class="inf"> Paulo Henrique Miranda Martins</div>
+                                    <div class="inf"> Developer web Student </div>
+                                    <div class="inf">Unicesumar Analysis and Systems Development</div>
+                                    <div class="inf">Uberlândia, Minas Gerais, Brasil</div>
+                                </div>
                             </div>
                                     <div class="social">
                                         <div class="social--img">
@@ -75,19 +80,29 @@
                     <a name="SKILS"></a>
                     <div class="skils">
                         <h1>LANGUAGES AND TOOLS</h1>
-                        <ul>
-                            <li> <img src="assets/img/html5.png"> HTML5</li>
-                            <li><img src="assets/img/css3.png">CSS3</li>
-                            <li> <img src="assets/img/JS.png">JAVASCRIPT</li>
-                            <li><img src="assets/img/git.png">GIT</li>
-                            <li class="ative"><img src="assets/img/bootstrap.png">BOOSTRAP</li>
-                        </ul>
+                        <div class="languages">
+                            <div class="skil--img"> <img src="assets/img/html5.png"></div>
+                            <div class="skil--img"><img src="assets/img/css3.png"></div>
+                            <div class="skil--img"> <img src="assets/img/JS.png"></div>
+                            <div class="skil--img"><img src="assets/img/git.png"></div>
+                            <div class="skil--img ative"><img src="assets/img/bootstrap.png"></div>
+                        </div>
                     </div>
                     <div class="conteudointerno">
                         <a name="PROJECTS"></a>
                         <div class="projects">
                             <h1>PROJECTS</h1>
-                            <h3>Devsla Clone Site Tesla Educativo</h3>
+                            <div class="carrossel-filmes">
+                                <div class="owl-carousel owl-theme">
+                                <div class="item"><a href="https://paulohmartins.github.io/DevlaResponsive/" target="_blank"><img class="box-filme" src="images/Devsla Clone Educativo Site TESLA.png" alt="Devsla"></a></div>
+                                <div class="item"><a href="https://paulohmartins.github.io/NerdFlixEstudo/" target="_blank"><img class="box-filme" src="images/Nerdflix Clone Netflixcom Carrossel Jquery.png" alt="Nerdflix"></a></div>
+                                <div class="item"><a href="https://paulohmartins.github.io/AwaxProjectResponsive/" target="_blank"><img class="box-filme" src="images/project Awax.png" alt="Awax"></a></div>
+                                <div class="item"><a href="https://paulohmartins.github.io/CloneInstagramAulaGabrielaPinheiro/" target="_blank"><img class="box-filme" src="images/clone Instagram Educativo.png" alt="Insta"></a></div>
+                                <div class="item"><a href="https://paulohmartins.github.io/CloneStarbucksCssHtml/" target="_blank"><img class="box-filme" src="images/project Clone Educativo Starbucks.png" alt="Starbucks"></a></div>
+                                <div class="item"><a href="https://paulohmartins.github.io/MedcenterB7Web/" target="_blank"><img class="box-filme" src="images/Medcenter Flexbox.png" alt="Medcenter"></a></div>
+                                
+                            </div>
+                            <!--<h3>Devsla Clone Site Tesla Educativo</h3>
                             <a href="https://paulohmartins.github.io/DevlaResponsive/" target="_blank">
                                 <img src="images/Devsla Clone Educativo Site TESLA.png" alt="">
                             </a>
@@ -110,7 +125,7 @@
                             <h3>Centro Médico </h3>
                             <a href="https://paulohmartins.github.io/MedcenterB7Web/" target="_blank">
                                 <img src="images/Medcenter Flexbox.png" alt="">
-                            </a>
+                            </a>-->
                         </div>
                     </div>
                 </div>
@@ -122,13 +137,13 @@
                         <h1>ABOUT</h1>
                         <h3> Academic Formation</h3>
                         <ul>
-                            <li>Unicesumar-Análise e Desenvolvimento de Sistemas 2021-2022</li>
-                            <li>Universidade Federal de Uberlândia-Sistemas de Informação (Não Concluido)2012-2013</li>
+                            <li>Unicesumar-Analise e Desenvolvimento de Sistemas 2021-2022</li>
+                            <li>UFU-Sistemas de Informação(Não Concluido)2012-2013</li>
                         </ul>
                         <h3>Education</h3>
                         <ul>
-                            <li>B7WEB-Desenvolvedor FullStack 2021-2022 </li>
-                            <li>Udemy Alumni- Curso de Javascript do básico ao Avançado 2021-2022</li>
+                            <li>B7WEB- DEV FullStack 2021-2022 </li>
+                            <li>Udemy Alumni-JS do Basico ao Avançado 2021-2022</li>
                         </ul>
                     </div>
                 </div>
@@ -138,12 +153,16 @@
                     <div class="rodape">
                         <div class="rodapeinterno">
                             <div class="empresa">
-                                <p>Desenvolvido por Paulo Henrique Miranda Martins  
-                                contato:(34)99978-2143</p>
+                                Desenvolvido por Paulo Henrique M Martins  
+                                
 
                             </div>
                         </div>
                 </div> 
             </footer>
+    <script src="https://kit.fontawesome.com/9b6c4f8890.js" crossorigin="anonymous"></script>
+    <script src="assets/js/owl/jquery.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.min.js"></script>
+    <script src="assets/js/owl/setup.js"></script>
     </body>
 </html>
