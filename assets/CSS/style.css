@@ -271,6 +271,21 @@ margin: auto;
     margin-top: 10px;
     cursor: pointer;
 }
+.owl-prev,.owl-next{
+    color: #fff;
+    
+}
+.owl-prev{
+    margin-right: 50px;
+}
+.owl-next,.owl-prev:hover{
+    background-color: rgb(50, 50, 60);
+    color: #FFF;
+}
+
+.owl-dots{
+    display: none;
+}
 /*RESPONSIVIDADE */
 @media (min-width:320px) and (max-width:700px) {
     .logomarca{
@@ -408,7 +423,10 @@ margin: auto;
     .rodape{
         height: auto;
     }
-
+    .owl-prev,.owl-next{
+        font-size: 40px;
+        padding-right: 20px;
+    }
 
 }
 @media (min-width:701px) and (max-width:1200px){
@@ -508,6 +526,10 @@ margin: auto;
         display: inline-block;
         padding: 0px;
         width: 100vw;
+    }
+    .owl-prev,.owl-next{
+        font-size: 40px;
+        padding-right: 20px;
     }
 
 }
