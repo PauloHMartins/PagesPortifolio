@@ -11,7 +11,8 @@ body{
     width: 100vw;
     height: 50px;
     background-color:#353535;
-    position: fixed;
+    position:fixed;
+    z-index: 999;
 }
 .subtopo{
     width: 1200px;
@@ -288,21 +289,26 @@ margin: auto;
 }
 /*RESPONSIVIDADE */
 @media (min-width:320px) and (max-width:700px) {
+    .topo{
+        width: 100vw;
+        height: 60px;
+        background-color:#353535;
+        position:fixed;
+        z-index: 999;
+    }
     .logomarca{
         display: none;
     }
-    .topo{
-        width: 100vw;
-    }
     .subtopo{
-        width: auto;
+        width: 100vw;
     }
     .menuinterno li {
         display: inline-block;
         justify-content: flex-start;
         font-size: 14px;
         width: 80px;
-        height: 50px;
+        height: 60px;
+        margin-top: 10px;
     }
 
     .direita{
@@ -351,7 +357,11 @@ margin: auto;
         height: auto;
         border: 0;
     }
+    .projects h1{
+        margin-bottom: -10px;
+    }
     .box-filme{
+        
         height: 240px;
         width: 440px;
         display: inline-block;
@@ -369,6 +379,9 @@ margin: auto;
         height: auto;
         border: 0;
 
+    }
+    .skils h1{
+        margin-bottom: -10px;
     }
     .languages{
         flex-direction: column;
