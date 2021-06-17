@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     background-color: rgb(38, 38, 48);
@@ -28,8 +29,8 @@ body{
     flex: 1.5;
 }
 .logomarca span{
-    font-family: 'Seymour One', sans-serif;
     cursor: pointer;
+    font-weight: 700;
 }
 .menu{
     flex:3;
@@ -44,7 +45,6 @@ body{
     flex-direction: row;
     text-align: center;
     cursor: pointer;
-    font-family: 'Do Hyeon', sans-serif;
     font-weight: bold;
 }
 .menu li {
@@ -89,7 +89,6 @@ body{
 .profile--informations {
     display: flex;
     flex-direction: column;
-    font-family:Arial, Helvetica, sans-serif;
     color: #353535;
     font-weight:bold;
     font-size: 20px;
@@ -118,8 +117,8 @@ body{
 .social .social--img a {
     margin-top: 20px;
     display: inline-flex;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 
 }
@@ -147,7 +146,6 @@ body{
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
 
 }
@@ -162,7 +160,7 @@ margin: auto;
     display:block;
     margin:auto;
     width: 100px;
-    height: 100px;
+    height: auto;
     line-height: 80px;
     border-radius: 20px;
 
@@ -189,20 +187,20 @@ margin: auto;
     border-radius: 30px;
 
 }*/
-.projects,
-.skils{
-    border-top: 3px solid rgb(50, 50, 60);
-}
+
 .conteudointerno .projects h3{
-    width: 100vw;
+    width: 90vw;
+    margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
-    border-top: 1px solid  rgb(50, 50, 60);
+    font-size: 15px;
     color: #fff;
     letter-spacing: 2px;
     padding-top: 20px;
+}
+.conteudo-responsivo{
+    display: none;
 }
 
 /*ABOUT*/
@@ -212,20 +210,15 @@ margin: auto;
     flex-direction: column;
     align-items: center;
     color: #FFF;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
 }
 .about h1{
     width: 80vw;
     display:inline-block;
-    border-top: 1px solid  rgb(50, 50, 60);
     padding-top: 15px;
 }
-.about li,
-.about h3{
-    
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 .about h3{
     width: 80vw;
     text-align: center;
@@ -235,7 +228,6 @@ margin: auto;
     color: #fff;
     letter-spacing: 2px;
     padding-top: 20px;
-    margin-bottom: 15px;
 }
 .about ul,
 .about li{
@@ -289,6 +281,20 @@ margin: auto;
 }
 /*RESPONSIVIDADE */
 @media (min-width:320px) and (max-width:700px) {
+    .conteudo-responsivo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .carroussel{
+        display: none;
+    }
+    .conteudo-responsivo img{
+        width: 320px;
+        height: 180px;
+        border-radius: 20px;
+    }
     .topo{
         width: 100vw;
         height: 60px;
@@ -353,7 +359,7 @@ margin: auto;
         margin: 15px;
     }
     .projects{
-        width: 100vw;
+        width: auto;
         height: auto;
         border: 0;
     }
@@ -362,11 +368,10 @@ margin: auto;
     }
     .box-filme{
         
-        height: 240px;
-        width: 440px;
+        height: 320px;
+        width: 480px;
         display: inline-block;
         padding: 10px;
-        width: 100vw;
     }
     .conteudo{
         width: 100vw;
@@ -450,10 +455,7 @@ margin: auto;
         justify-content: space-around;
     }
     .logomarca{
-        font-size: 24px;
-        line-height: 50px;
-        flex: 1;
-        margin-left: 10px;
+       display: none;
     }
     .menuinterno{
         flex: 1;
@@ -480,7 +482,7 @@ margin: auto;
         display:block;
         height: 200px;
         width: 200px;
-        margin-left:10px;
+        margin-left:5vw;
         border-radius: 100px;
         margin-top: 30px;
         margin-bottom: 15px;
@@ -494,7 +496,7 @@ margin: auto;
         color: #353535;
         font-weight:bold;
         font-size: 14px;
-        margin-left: 10px;
+        margin-left: 5vw;
     
     }
     .direita{
@@ -514,7 +516,7 @@ margin: auto;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left:25px;
+        margin-left:5vw;
     
     }
     .social .social--img a {
@@ -534,8 +536,8 @@ margin: auto;
         border: 0;
     }
     .box-filme{
-        height: 280px;
-        width: 700px;
+        height: 360px;
+        width: 720px;
         display: inline-block;
         padding: 0px;
         width: 100vw;
@@ -557,7 +559,8 @@ margin: auto;
         margin-left: 2vw;
     }
     .box-filme{
-        height:350px;
+        height:400px;
+        width: 800px;
         display: inline-block;
         padding: 0px;
         width: 100vw;
